@@ -1,0 +1,25 @@
+body {
+  background-color: #000;
+}
+
+.container {
+  background-color: #121212;
+  border-radius: 25px;
+  color: whitesmoke;
+  padding: 1em;
+}
+
+#chat-box {
+  height: 350px;
+  overflow: auto;
+  padding: 1em;
+  border: 1px solid white;
+}
+
+input {
+  color: white;
+}
+
+#user-name {
+  width: 100px;
+}
