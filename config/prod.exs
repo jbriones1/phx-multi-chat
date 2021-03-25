@@ -12,6 +12,7 @@ use Mix.Config
 config :multi_chat, MultiChatWeb.Endpoint,
   http: [port: {:system, "PORT"}],
   load_from_system_env: true,
+  check_origin: false,
   url: [scheme: "https", host: "jondreb-multi-chat.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json",
