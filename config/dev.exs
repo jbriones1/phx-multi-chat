@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :multi_chat, MultiChat.Repo,
   username: "postgres",
-  password: "",
+  password: "narwhal1",
   database: "multi_chat_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,

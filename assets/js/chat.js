@@ -5,6 +5,8 @@ const Chat = {
     const channel = socket.channel('chat:' + room, {});
     channel.join();
 
+    console.log(socket);
+
     this.listenForChats(channel);
   },
 
