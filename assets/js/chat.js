@@ -14,7 +14,7 @@ const Chat = {
     const message = document.getElementById('user-msg').value;
 
     channel.push('shout', {name: userName, body: message});
-      document.getElementById('user-msg').value = '';
+    document.getElementById('user-msg').value = '';
     }
 
     document.getElementById('chat-form').addEventListener('submit', e => {
@@ -29,6 +29,10 @@ const Chat = {
 
       msgBlock.innerHTML = `<b>${payload.name}</b>: ${payload.body}`;
       chatBox.appendChild(msgBlock);
+    });
+
+    channel.on('joined', payload => {
+      console.log(payload.message);
     });
   }
 }
